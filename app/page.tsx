@@ -88,7 +88,7 @@ function App() {
             tieBreak={tieBreak}
             tieBreakFirstBreak={tieBreakFirstBreak}
             onDraftChange={(d) => setDraft(d)}
-            onClearDraft={handleDiscardDraft}
+            onClear={handleDiscardDraft}
             onExit={() => setScreen("main")}
             onFinish={(setActions, m) => {
               setResult(setActions)
