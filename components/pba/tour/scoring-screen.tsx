@@ -30,11 +30,11 @@ import {
 } from "@/lib/pba/game"
 import { downloadMatchHtml, type MatchMeta } from "@/lib/pba/export"
 import { withAlpha } from "@/lib/pba/colors"
-import { useTheme } from "./theme-context"
+import { useTheme } from "../theme-context"
 import { Scoreboard } from "./scoreboard"
-import { useLongPress } from "./use-long-press"
-import { PreviewDialog } from "./preview-dialog"
-import { ReviewScreen } from "./review-screen"
+import { useLongPress } from "../use-long-press"
+import { PreviewDialog } from "../preview-dialog"
+import { ReviewScreen } from "../review-screen"
 import type { MatchDraft } from "@/lib/pba/draft"
 
 interface ScoringScreenProps {
