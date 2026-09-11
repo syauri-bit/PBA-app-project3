@@ -39,8 +39,7 @@ export function SetupScreen({ onBack, onStart }: SetupScreenProps) {
       targetScore: matchMode === "single" ? targetScore : 15,
       targetSets: matchMode === "set" ? targetSets : 1,
       firstBreak,
-      // 1부투어 규칙: 초구 선택한 측이 흰색 공(whiteBallSide)
-      whiteBallSide: firstBreak,
+      whiteBallSide: firstBreak, // 1부투어 규칙: 초구 선택한 측이 흰색 공
       p1Timeouts: timeouts,
       p2Timeouts: timeouts,
       player1: { name: p1Name || "선수 1", club: p1Club },
@@ -210,7 +209,7 @@ export function SetupScreen({ onBack, onStart }: SetupScreenProps) {
           </div>
         </div>
 
-        {/* 임원 및 기록 심판 (선택 사항) */}
+        {/* 임원 및 기록 심판 */}
         <div className="grid grid-cols-3 gap-2 pt-2">
           <input
             type="text"
