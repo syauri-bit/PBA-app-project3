@@ -2,11 +2,10 @@
 
 import { useEffect, useRef } from "react"
 import type { DerivedSet, MatchConfig, Side, Turn } from "@/lib/pba/types"
-import type { MatchConfig } from "@/lib/pba/types"
 import { TEAM_COLORS } from "@/lib/pba/types"
 import { isDoublesSet, getSetPlayers } from "@/lib/pba/game"
 import { withAlpha } from "@/lib/pba/colors"
-import { useTheme } from "../theme-context"
+import { useTheme } from "./theme-context"
 
 interface ScoreboardProps {
   config: MatchConfig
