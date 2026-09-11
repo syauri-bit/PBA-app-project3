@@ -28,7 +28,7 @@ import {
 import { downloadMatchHtml, formatDuration, type MatchMeta } from "@/lib/pba/export"
 import { withAlpha } from "@/lib/pba/colors"
 import { useTheme } from "./theme-context"
-import { Scoreboard } from "./scoreboard"
+import { Scoreboard } from "./tour/scoreboard"
 
 interface ResultScreenProps {
   config: MatchConfig
