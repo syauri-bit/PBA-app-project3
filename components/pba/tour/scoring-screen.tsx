@@ -1,32 +1,5 @@
 "use client"
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react"
-import {
-  ChevronLeft,
-  Download,
-  Eye,
-  FileText,
-  Home,
-  Plus,
-  RotateCcw,
-  Save,
-  SkipForward,
-  Sparkles,
-  Table,
-  ListChecks,
-} from "lucide-react"
-import type { GameAction, MatchConfig, Side } from "@/lib/pba/types"
-import { TEAM_COLORS, playersPerTeam } from "@/lib/pba/types"
-import {
-  countSetWins,
-  currentTurn,
-  deriveSet,
-  firstBreakForSet,
-  formatAverage,
-  getSetConfig,
-  getSetPlayers,
-  getWinningScoreForSet,
-  isDoublesSet,
 } from "@/lib/pba/game"
 import { downloadMatchHtml, type MatchMeta } from "@/lib/pba/export"
 import { withAlpha } from "@/lib/pba/colors"
