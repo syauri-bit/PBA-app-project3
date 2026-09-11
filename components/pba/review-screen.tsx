@@ -10,7 +10,7 @@ import {
   getSetConfig,
   getSetPlayers,
 } from "@/lib/pba/game"
-import { Scoreboard } from "./scoreboard"
+import { Scoreboard } from "@/components/pba/tour/scoreboard"
 import { useTheme } from "./theme-context"
 
 interface ReviewScreenProps {
