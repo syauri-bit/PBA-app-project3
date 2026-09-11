@@ -8,12 +8,12 @@ import { MainScreen } from "@/components/pba/main-screen"
 import { Footer } from "@/components/pba/footer"
 import { clearDraft, loadDraft, type MatchDraft } from "@/lib/pba/draft"
 
-// 📌 [모듈화] 1부투어 전용 컴포넌트 불러오기
+// 📌 [모듈화] tour/ 폴더로 이동된 1부투어 전용 컴포넌트 불러오기
 import { SetupScreen as TourSetupScreen } from "@/components/pba/tour/setup-screen"
-import { ScoringScreen as TourScoringScreen } from "@/components/pba/scoring-screen" // scoring-screen 내부 연결 정돈 후 이동 가능
+import { ScoringScreen as TourScoringScreen } from "@/components/pba/tour/scoring-screen"
 import { ResultScreen } from "@/components/pba/result-screen"
 
-// 📌 [모듈화] 팀리그 전용 컴포넌트 불러오기 (임시)
+// 📌 [모듈화] 팀리그 전용 컴포넌트 (추후 team/ 폴더 생성 후 작성)
 import { TeamScreen } from "@/components/pba/team-screen"
 
 type Screen = "main" | "setup" | "scoring" | "result" | "team"
@@ -101,7 +101,7 @@ function App() {
           />
         )}
 
-        {/* ================= 팀리그 모듈 (추후 제작) ================= */}
+        {/* ================= 팀리그 모듈 (추후 작성) ================= */}
         {screen === "team" && (
           <TeamScreen onBack={() => setScreen("main")} />
         )}
