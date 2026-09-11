@@ -8,7 +8,7 @@ import { MainScreen } from "@/components/pba/main-screen"
 import { Footer } from "@/components/pba/footer"
 import { clearDraft, loadDraft, type MatchDraft } from "@/lib/pba/draft"
 
-// 📌 [1부투어 전용 모듈 불러오기]
+// 📌 1부투어 전용 모듈 import 구문 확인 및 수정
 import { SetupScreen as TourSetupScreen } from "@/components/pba/tour/setup-screen"
 import { ScoringScreen as TourScoringScreen } from "@/components/pba/tour/scoring-screen"
 import { ResultScreen } from "@/components/pba/result-screen"
